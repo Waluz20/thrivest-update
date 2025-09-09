@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Thrivest — Invest with Smart Automation</title>
+<link rel="stylesheet" href="css/style.css"/>
+<script defer src="js/script.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><img src="assets/logo.svg" alt="Thrivest"/><span>thrivest</span></div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html" class="btn btn-primary">Get Started</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="layer l1 parallax" data-speed="0.12"></div>
+  <div class="layer l2 parallax" data-speed="0.2"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="logo-glow"><img src="assets/logo.svg" alt="logo"/><span>thrivest</span></div>
+      <h1>Trivest is the most trusted place for people and businesses to invest and trade the financial markets — <b>powered by smart automation</b>.</h1>
+      <p class="lead">Run the bot, watch the markets, and track your growth with our beautiful, responsive dashboard.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="signup.html">Open account</a>
+        <a class="btn" href="#plans">View plans</a>
+      </div>
+    </div>
+    <div>
+      <div class="phone">
+        <div class="phone-head">Bot online <span class="dot on"></span></div>
+        <div class="market-list" id="marketList"></div>
+        <div class="phone-foot">Strategy: <b>AlphaGrid v3</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker"></div>
+</div>
+
+<section class="bot">
+  <h2>Live Bot Activity</h2>
+  <div class="stream" id="botStream"></div>
+</section>
+
+<section class="plans" id="plans">
+  <h2>Choose your plan</h2>
+  <div class="cards">
+    <div class="card"><div class="tag">Bronze</div><div class="roi">0.5% ROI</div><div>$100 - $499</div><a class="btn" href="calculator.html">Try calculator</a></div>
+    <div class="card"><div class="tag">Silver</div><div class="roi">0.7% ROI</div><div>$500 - $1,499</div><a class="btn" href="calculator.html">Try calculator</a></div>
+    <div class="card"><div class="tag">Gold</div><div class="roi">0.85% ROI</div><div>$1,500 - $4,999</div><a class="btn" href="calculator.html">Try calculator</a></div>
+    <div class="card"><div class="tag">Platinum</div><div class="roi">1% ROI</div><div>$5,000 - $10,000</div><a class="btn" href="calculator.html">Try calculator</a></div>
+  </div>
+</section>
+
+<section class="leader">
+  <h2>Leaderboard</h2>
+  <div class="lb" id="leaderboard"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="handles">
+    <a class="social" href="#"><img src="assets/facebook.svg" alt=""> Facebook</a>
+    <a class="social" href="#"><img src="assets/twitter.svg" alt=""> Twitter/X</a>
+    <a class="social" href="#"><img src="assets/instagram.svg" alt=""> Instagram</a>
+    <a class="social" href="#"><img src="assets/linkedin.svg" alt=""> LinkedIn</a>
+    <a class="social" href="#"><img src="assets/youtube.svg" alt=""> YouTube</a>
+  </div>
+  <div>
+    <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a> · © 2025 Thrivest
+  </div>
+</footer>
+
+<!-- Chat mock -->
+<button class="chat-fab" id="chatFab">💬</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-messages" id="chatMessages">
+    <div class="chip">Support: Hi! How can we help today?</div>
+  </div>
+  <div class="chat-input">
+    <input id="chatInput" class="input" placeholder="Type a message..."/>
+    <button id="chatSend" class="btn btn-primary">Send</button>
+  </div>
+</div>
+
+</body></html>

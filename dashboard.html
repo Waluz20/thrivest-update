@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dashboard — Thrivest</title>
+<link rel="stylesheet" href="css/style.css"/><script defer src="js/script.js"></script></head>
+<body>
+<header class="topbar">
+  <div class="brand"><img src="assets/logo.svg" alt=""/><span>thrivest</span></div>
+  <nav class="nav-links"><a href="index.html">Home</a><a href="calculator.html">Calculator</a><button id="logoutBtn" class="btn">Logout</button></nav>
+</header>
+<main class="container">
+  <aside class="sidebar">
+    <div class="profile" style="display:flex; gap:10px; align-items:center">
+      <div style="width:40px;height:40px;border-radius:50%;background:#e6f2ff"></div>
+      <div>
+        <div id="userName" style="font-weight:800">Investor</div>
+        <div id="userEmail" class="muted">you@demo.com</div>
+      </div>
+    </div>
+    <ul class="side" style="list-style:none;padding-left:0;margin-top:12px;display:grid;gap:8px">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#earnings">Earnings</a></li>
+    </ul>
+  </aside>
+  <section class="main">
+    <div id="overview">
+      <h2>Overview</h2>
+      <div class="overview">
+        <div class="box"><div>Total Balance</div><div id="totalBalance" style="font-size:22px;font-weight:900">$0.00</div></div>
+        <div class="box"><div>Active Investments</div><div id="activeInvest" style="font-size:22px;font-weight:900">0</div></div>
+        <div class="box"><div>Weekly ROI</div><div id="weeklyROI" style="font-size:22px;font-weight:900">0%</div></div>
+      </div>
+    </div>
+    <div id="portfolio" style="margin-top:14px">
+      <h3>Your Portfolio</h3>
+      <div id="portfolioList" class="portfolio-list"></div>
+      <button id="addFake" class="btn" style="margin-top:10px">Add demo investment</button>
+    </div>
+    <div id="earnings" style="margin-top:14px">
+      <h3>Recent Earnings</h3>
+      <ul id="earnList" class="earn-list"></ul>
+    </div>
+  </section>
+</main>
+</body></html>
